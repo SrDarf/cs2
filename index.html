@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor CS2 Madrugadão</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bef417f226.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.6.2/simpleParallax.min.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <nav class="container">
+            <div class="nav-left">
+                <p class="logo">Madrugadão</p>
+                <span id="playerCount" class="player-count">Online: </span>
+            </div>
+            <div class="nav-right">
+                <a href="#why-play">Features</a>
+                <a href="#community">Comunidade</a>
+                <a href="#store">Loja</a>
+                <a href="#rules">Regras</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bem-vindo ao <span class="contrast">Madrugadão</span></h1>
+                    <p>Nosso servidor Premium de Counter Strike com ping baixo e uma comunidade ativa a qualquer hora do dia!</p>
+                    <div class="server-ip">
+                        <p id="ip" class="ip-address"></p>
+                        <button id="copyIcon" class="copy-button" aria-label="Copiar IP do servidor">
+                            <i class="fa-solid fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-play" class="why-play">
+            <div class="container">
+                <h2>Por que Jogar Conosco</h2>
+                <div class="reasons-wrapper">
+                    <div class="blur-overlay blur-left" aria-hidden="true"></div>
+                    <div class="reasons-container" id="reasonsContainer"></div>
+                    <div class="blur-overlay blur-right" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community">
+            <div class="container">
+                <h2>Junte-se à Nossa Comunidade</h2>
+                <div class="discord-container">
+                    <div class="discord-info">
+                        <h3><i class="fab fa-discord" aria-hidden="true"></i> Conecte-se com outros jogadores</h3>
+                        <p>Entre no nosso servidor Discord para conversar, encontrar companheiros de equipe e ficar atualizado sobre os eventos do servidor!</p>
+                        <a href="https://discord.gg/your-invite-link" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+                            <i class="fab fa-discord" aria-hidden="true"></i> Entre no nosso Discord
+                        </a>
+                    </div>
+                    <div class="discord-stats">
+                        <div class="stat-item">
+                            <span id="discordMembers" class="stat-value">5.000+</span>
+                            <span class="stat-label">Membros</span>
+                        </div>
+                        <div class="stat-item">
+                            <span id="discordOnline" class="stat-value">1.200+</span>
+                            <span class="stat-label">Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="store" class="store">
+            <div class="container">
+                <h2>Loja</h2>
+                <div class="store-grid"></div>
+            </div>
+        </section>
+
+        <section id="rules" class="rules">
+            <div class="container">
+                <h2>Regras do Servidor</h2>
+                <div class="rules-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Madrugadão</h3>
+                    <p>A melhor experiência de CS2 para os jogadores noturnos. Junte-se à nossa comunidade de corujas e domine o servidor!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#why-play">Features</a></li>
+                        <li><a href="#community">Comunidade</a></li>
+                        <li><a href="#store">Loja</a></li>
+                        <li><a href="#rules">Regras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Conecte-se Conosco</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Madrugadão. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
